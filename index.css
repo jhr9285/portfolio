@@ -1,3 +1,4 @@
+/* 태그 */
 body {
     font-family: 'Noto Serif KR', serif;
 }
@@ -5,29 +6,33 @@ h1, h2, h3, .navvar-brand {
     font-weight: bold;
 }
 li, p {
-    font-size: 14pt;
+    font-size: 15pt;
 }
-.container, .container-fluid {
-    padding-top: 100px;
-    padding-bottom: 100px;
+/* 클래스 */
+#c_toy1, #c_toy2 {
+    background-color: #e9eff2;
 }
-.container-fluid {
-    background-color: #eeeeee;
+.container {
+    padding-top: 70px;
+    padding-bottom: 90px;
 }
 .container h2, .container h3 {
     padding-top: 50px;
 }
 .carousel-caption {
     position: relative;
-    bottom: 450px;
+    bottom: 350px;
     left: 0px;
 } 
-.carousel-caption > p, #toy, #toy > h2 + p {
+.carousel-caption > p, #toy1 > h2 + p, #toy2 > h2 + p {
     margin-top: 15px;
 }
-.col-sm-4 > a > img {
+.carousel-item, .carousel-item > img {
     width: 100%;
-    border: 1px solid lightgray;
+    height: 600px;
+}
+.col-sm-4 img {
+    width: 100%;
 }
 .nav-link {
     font-size: 12pt;
