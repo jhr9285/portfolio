@@ -29,6 +29,11 @@
               });
             } 
           });
+        
+          $('#sendBtn').click(function(){
+
+          })
+
         })
     </script>
 </head>
@@ -45,7 +50,7 @@
                 <a class="nav-link" href="#c_intro" data-toggle="collapse" data-target=".navbar-collapse.show">자기소개</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#c_toy1" data-toggle="collapse" data-target=".navbar-collapse.show">Toy Project</a>
+                <a class="nav-link" href="#c_toy" data-toggle="collapse" data-target=".navbar-collapse.show">Toy Project</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#c_team" data-toggle="collapse" data-target=".navbar-collapse.show">Team Project</a>
@@ -127,9 +132,9 @@
         </div> 
     </div> <!-- Self Inproduction End -->
 
-    <!-- Toy Project Container Start ------------------------------------------------------>
-    <div class="container-fluid" id="c_toy1";>
-        <div class="container text-center" id="toy1">
+    <!-- Toy Project Start ------------------------------------------------------>
+    <div class="container-fluid" id="c_toy";>
+        <div class="container text-center" id="toy">
             <h2><i class="fa-solid fa-robot"></i> Toy Project</h2>
             <p>공부하면서 작성해본 미니 프로젝트입니다.</p>
             <!-- Toy Project List 1 Start -->
@@ -184,7 +189,7 @@
             </div>  <!-- Toy Project List 2 End -->
         </div>    
     </div>
-    <!-- Team Project Container Start ------------------------------------------------------>
+    <!-- Team Project Start ------------------------------------------------------>
     <div class="container-fluid" id="c_team";>
         <div class="container text-center" id="team">
             <h2><i class="fa-solid fa-people-group"></i> Team Project</h2>
@@ -214,6 +219,38 @@
                 </div>
             </div> <!-- Team Project Picture List End-->
         </div>
-    </div>  <!-- Team Project Container End -->
+    </div>  <!-- Team Project End -->
+
+    <!-- Contact Start ------------------------------------------------------>
+    <div class="container-fluid" id="c_contact">
+        <div class="container" id="contact">
+            <h2 class="text-center"><i class="fa-solid fa-envelope"></i> Contact</h2>
+            <p class="text-center">문의가 있으시면 아래 입력란을 작성하셔서 보내주세요.</p>
+            <div class="row test">
+                <div class="col-md-4">
+                <p> </p>
+                <p><span class="glyphicon glyphicon-map-marker"></span>South Korea</p>
+                <p><span class="glyphicon glyphicon-phone"></span> </p>
+                <p><span class="glyphicon glyphicon-envelope"></span>Email: jhr9285@naver.com</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit" id="sendBtn"><i class="fa-solid fa-paper-plane"></i> Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div> <!-- Contact End -->
 </body>
 </html>
