@@ -7,11 +7,35 @@ h1, h2, h3, .navvar-brand {
 li, p {
     font-size: 15pt;
 }
+#arrow {
+    width: 100%;
+    height: 250px;
+    background-color: aliceblue;
+}
+#arrow > div > h2 {
+    position: relative;
+    bottom: 40px;
+}
+#arrow1 {
+    position: relative;
+    bottom: 30px;
+}
+#arrow2 {
+    position: relative;
+    bottom: 50px;
+}
 #c_toy {
     background-color: #e9eff2;
 }
-#c_contact {
-    background-color: #fbfbe2;
+#c_intro > div > h2 > img, #toy > h2 > img, #team > h2 > img {
+    position: relative;
+    bottom: 5px;
+    right: 1px;
+}
+#contact > p {
+    font-size: 13pt!important;
+    position: relative;
+    bottom: 30px;
 }
 .container {
     padding-top: 70px;
@@ -58,4 +82,24 @@ li, p {
     left: 425px;
     top: 10px;
     border: 1px solid lightgray;
+}
+#skill > span {
+    display: inline-block;
+    padding-right: 30px;
+    margin-right: 9px;
+}
+#skill > span > img {
+    width: 130%;
+}
+#skill > span:first-child > img {
+    position: 0px!important;
+}
+#skill > span:nth-child(5) > img {
+    width: 90%!important;
+    position: relative;
+    left: 27px;
+}
+#skill > span:nth-child(6) > img {
+    position: relative;
+    left: 16px;
 }
