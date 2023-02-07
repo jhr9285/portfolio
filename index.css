@@ -1,4 +1,3 @@
-/* 태그 */
 body {
     font-family: 'Noto Serif KR', serif;
 }
@@ -8,9 +7,11 @@ h1, h2, h3, .navvar-brand {
 li, p {
     font-size: 15pt;
 }
-/* 클래스 */
-#c_toy1, #c_toy2 {
+#c_toy {
     background-color: #e9eff2;
+}
+#c_contact {
+    background-color: #fbfbe2;
 }
 .container {
     padding-top: 70px;
@@ -24,7 +25,7 @@ li, p {
     bottom: 350px;
     left: 0px;
 } 
-.carousel-caption > p, #toy1 > h2 + p, #toy2 > h2 + p {
+.carousel-caption > p, #toy > h2 + p, #contact > p {
     margin-top: 15px;
 }
 .carousel-item, .carousel-item > img {
@@ -34,12 +35,8 @@ li, p {
 .col-sm-4 img {
     width: 100%;
 }
-.nav-link {
-    font-size: 12pt;
-    color: #cacaca!important;
-}
-.nav-item {
-    padding-left: 10px;
+.col-md-8 {
+    margin-top: 20px;
 }
 .fa-id-badge + p > h3 {
     width: 550px;
@@ -48,4 +45,17 @@ li, p {
 .fa-id-badge + p > h3 + ul {
     width: 500px;
     margin: 5px auto;
+}
+.nav-link {
+    font-size: 12pt;
+    color: #cacaca!important;
+}
+.nav-item {
+    padding-left: 10px;
+}
+#sendBtn {
+    position: relative;
+    left: 425px;
+    top: 10px;
+    border: 1px solid lightgray;
 }
